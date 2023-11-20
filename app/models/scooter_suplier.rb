@@ -1,0 +1,2 @@
+class ScooterSuplier < ApplicationRecord
+end

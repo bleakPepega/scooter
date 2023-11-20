@@ -1,0 +1,12 @@
+{
+  "name": "app",
+  "scripts": {
+    "build:css": "tailwindcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.tailwind.css --postcss",
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=/assets"
+  },
+  "private": "true",
+  "dependencies": {
+    "esbuild": "^0.19.3",
+    "mapkick": "^0.2.6"
+  }
+}
